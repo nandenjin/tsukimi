@@ -6,6 +6,15 @@ const manifest = defineManifest({
   manifest_version: 3,
   name: 'Tsukimi',
   version: '0.0.0',
+  icons: {
+    512: 'src/assets/icons/icon_512.png',
+  },
+  content_scripts: [
+    {
+      matches: ['https://scrapbox.io/*'],
+      js: ['src/content_script/main.ts'],
+    },
+  ],
 })
 
 // https://vitejs.dev/config/
