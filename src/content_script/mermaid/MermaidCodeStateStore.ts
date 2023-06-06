@@ -1,3 +1,5 @@
+// Thanks: https://scrapbox.io/customize/Mermaid記法可視化UserScript
+
 export class MermaidCodeStateStore {
   visibility = new Map<string, boolean>()
   defaultValue = true

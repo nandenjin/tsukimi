@@ -1,3 +1,5 @@
+// Thanks: https://scrapbox.io/customize/Mermaid記法可視化UserScript
+
 import { Mermaid } from 'mermaid'
 import { MermaidCode } from './MermaidCode'
 import { MermaidCodeStateStore } from './MermaidCodeStateStore'
