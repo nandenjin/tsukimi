@@ -5,9 +5,9 @@ import { crx, defineManifest } from '@crxjs/vite-plugin'
 const manifest = defineManifest({
   manifest_version: 3,
   name: 'Tsukimi',
-  version: '0.0.0',
+  version: '0.0.1',
   icons: {
-    512: 'src/assets/icons/icon_512.png',
+    128: 'src/assets/icons/icon_128.png',
   },
   content_scripts: [
     {
