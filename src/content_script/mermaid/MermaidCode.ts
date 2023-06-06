@@ -46,6 +46,9 @@ export class MermaidCode {
 
   /** Update rendered diagram */
   async updateDiagram() {
+    // Remove previous error message
+    $('#' + this.svgId + '_Error').remove()
+
     try {
       const rendered = await this.mermaid.mermaidAPI.render(
         this.svgId,
@@ -54,9 +57,6 @@ export class MermaidCode {
 
       // Remove previous render result
       $('#' + this.svgId).remove()
-
-      // Remove previous error message
-      $('#' + this.svgId + '_Error').remove()
 
       // Insert new render result
       $('#L' + this.lastLineId).after(rendered.svg)
