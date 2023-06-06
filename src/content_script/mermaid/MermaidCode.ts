@@ -49,11 +49,34 @@ export class MermaidCode {
         this.svgId,
         this.text
       )
+
+      // Remove previous render result
       $('#' + this.svgId).remove()
+
+      // Remove previous error message
+      $('#' + this.svgId + '_Error').remove()
+
+      // Insert new render result
       $('#L' + this.lastLineId).after(rendered.svg)
     } catch (e) {
+      // Handle render error
       console.error(e)
-      $('#L' + this.lastLineId).after($('#' + this.svgId))
+      if (e instanceof Error) {
+        $('#L' + this.lastLineId)
+          .after($('#' + this.svgId))
+
+          // Add error message
+          .after(
+            $('<output>')
+              .addClass('tsukimi-mermaid-error')
+              .attr('id', `${this.svgId}_Error`)
+              .text(e.message)
+          )
+
+        // Show code block automatically
+        this.store.setVisibility(this.id, true)
+        this.applyCodeView()
+      }
     }
     $('#' + this.svgId)
       .on('click', () => this.onSvgClicked())

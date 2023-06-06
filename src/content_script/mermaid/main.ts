@@ -3,6 +3,7 @@
 
 import mermaid from 'mermaid'
 import { MermaidViewer } from './MermaidViewer'
+import './style.css'
 
 // Initialize mermaid
 mermaid.mermaidAPI.initialize({
