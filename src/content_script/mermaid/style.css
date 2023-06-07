@@ -1,3 +1,8 @@
+.tsukimi-mermaid-rendered {
+  padding: 1em;
+  background-color: #88888822;
+}
+
 .tsukimi-mermaid-error {
   padding: 1em;
   border-left: 0.25em solid #ff0000;

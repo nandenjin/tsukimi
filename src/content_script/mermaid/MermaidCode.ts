@@ -59,7 +59,9 @@ export class MermaidCode {
       $('#' + this.svgId).remove()
 
       // Insert new render result
-      $('#L' + this.lastLineId).after(rendered.svg)
+      $('#L' + this.lastLineId).after(
+        $(rendered.svg).addClass('tsukimi-mermaid-rendered')
+      )
     } catch (e) {
       // Handle render error
       console.error(e)
