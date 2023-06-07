@@ -5,6 +5,9 @@ import mermaid from 'mermaid'
 import { MermaidViewer } from './MermaidViewer'
 import './style.css'
 import { isDarkTheme } from '@/lib/themes'
+import { waitOnReady } from '@/lib/setup'
+
+await waitOnReady()
 
 // Initialize mermaid
 mermaid.mermaidAPI.initialize({
