@@ -6,7 +6,7 @@ import tsConfigPaths from 'vite-tsconfig-paths'
 const manifest = defineManifest({
   manifest_version: 3,
   name: 'Tsukimi',
-  version: '0.0.1',
+  version: process.env.npm_package_version,
   icons: {
     128: 'src/assets/icons/icon_128.png',
   },
