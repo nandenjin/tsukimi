@@ -5,7 +5,7 @@ interface EventEmitter {
   once(event: string, listener: (...args: unknown[]) => void): this
 }
 
-export interface Line {
+export type Line = {
   id: string
   text: string
   userId: string
@@ -18,12 +18,21 @@ export interface Line {
   }
 }
 
-export interface Page<T extends Layout> {
+export type Page<T extends Layout> = {
   get lines(): T extends 'page' ? Line[] : null
   get title(): T extends 'page' ? string : null
   get id(): T extends 'page' ? string : null
 }
 
+export type Project = {
+  get pages(): (Page<'page'> & {
+    exists: boolean
+    updated: number
+    image?: string
+  })[]
+}
+
 export type Scrapbox = EventEmitter & {
   Page: Page
+  Project: Project
 }
