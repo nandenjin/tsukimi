@@ -37,7 +37,7 @@ window.addEventListener('keyup', (e) => {
   const text = line.text.substring(0, char)
 
   // Tests for content just inputted
-  const endsWithLinkRegExp = /\[(.+?)\]$/
+  const endsWithLinkRegExp = /\[([^[]+?)\]$/
   const textEndsWithLink = text.match(endsWithLinkRegExp)
   const prevLineTextEndsWithLink = prevText.match(endsWithLinkRegExp)
 
