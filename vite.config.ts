@@ -8,7 +8,6 @@ const manifest = defineManifest({
   name: 'Tsukimi',
   version: process.env.npm_package_version,
   description: 'Useful toolkit for scrapbox.io as browser extension',
-  default_locale: 'en',
   homepage_url: 'https://github.com/nandenjin/tsukimi',
   minimum_chrome_version: '89',
   icons: {
