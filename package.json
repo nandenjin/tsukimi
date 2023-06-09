@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.1",
   "type": "module",
+  "description": "Useful toolkit for scrapbox.io as browser extension",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
