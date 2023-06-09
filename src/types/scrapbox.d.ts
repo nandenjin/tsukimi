@@ -29,6 +29,8 @@ export type Project = {
     exists: boolean
     updated: number
     image?: string
+    titleLc: string
+    titleLengthForSort: number
   })[]
 }
 
