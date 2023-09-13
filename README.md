@@ -8,5 +8,4 @@ Utility as browser extension for scrapbox.io users
 
 ## Features
 
-- Render [mermaid](https://mermaid.js.org/) diagram
 - Autocomplete `.icon` while typing links
