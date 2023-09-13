@@ -1,8 +1,6 @@
-import mermaidSrc from './mermaid/main.ts?script&module'
 import autoIconSrc from './autoicon/main.ts?script&module'
 
 const funcs = {
-  mermaid: mermaidSrc,
   autoIcon: autoIconSrc,
 }
 
