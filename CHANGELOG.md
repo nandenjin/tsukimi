@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/nandenjin/tsukimi/compare/v0.1.1...v0.2.0) (2023-09-13)
+
+
+### Features
+
+* Remove mermaid renderer ([#20](https://github.com/nandenjin/tsukimi/issues/20)) ([250a0ae](https://github.com/nandenjin/tsukimi/commit/250a0ae42d8d5ec5ab16d1f512ddc6fdb9783d23))
+
 ## [0.1.1](https://github.com/nandenjin/tsukimi/compare/v0.1.0...v0.1.1) (2023-06-09)
 
 
