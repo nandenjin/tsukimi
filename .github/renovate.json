@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "labels": ["dependencies"],
-  "schedule": ["* 13 26 * *"],
+  "schedule": ["* * 26 * *"],
   "lockFileMaintenance": { "enabled": true },
   "packageRules": [
     {
