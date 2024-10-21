@@ -1,3 +1,8 @@
+import { Line } from '@/types/scrapbox'
+
+/**
+ * Represents the position of the cursor in the editor.
+ */
 type CursorPosition = {
   /** Line ID of active cursor */
   lineId: string | null
@@ -12,13 +17,13 @@ export const getCursorPosition: () => CursorPosition = () => {
   // https://scrapbox.io/takker/scrapbox-cursor-position-6
   const [cursorDOM] = document.getElementsByClassName('cursor')
 
-  if (!(cursorDOM instanceof HTMLElement)) {
+  if (!(cursorDOM instanceof HTMLElement) || !scrapbox.Page.lines) {
     return { lineId: null, char: -1 }
   }
 
   const bounding = cursorDOM.getBoundingClientRect()
 
-  // Not in the editor
+  // When not in the editor
   if (bounding.left === 0 && bounding.top === 0) {
     return { lineId: null, char: -1 }
   }
@@ -52,8 +57,10 @@ export const getCursorPosition: () => CursorPosition = () => {
 }
 
 /** Get line data by lineId */
-export const getLineById = (id: string) => {
-  for (const line of scrapbox.Page.lines) {
+export const getLineById = (id: string): Line | null => {
+  const lines = scrapbox.Page.lines
+  if (!lines) return null
+  for (const line of lines) {
     if (line.id === id) return line
   }
   return null

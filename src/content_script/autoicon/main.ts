@@ -48,7 +48,11 @@ window.addEventListener('keyup', (e) => {
    * @returns Whether the link is converted
    */
   const convert = () => {
-    const linkId = textEndsWithLink[1]
+    const linkId = textEndsWithLink?.[1]
+
+    // If the link content is not available, abort
+    if (!linkId) return false
+
     // If it already is icon link, abort
     if (linkId.match(/\.icon$/)) return false
 
