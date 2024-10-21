@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/nandenjin/tsukimi/compare/v0.2.0...v0.3.0) (2024-10-21)
+
+
+### Features
+
+* Copy URL and title in Cosense format via context menu ([#32](https://github.com/nandenjin/tsukimi/issues/32)) ([715fbe9](https://github.com/nandenjin/tsukimi/commit/715fbe91a2e5feecad633a99abcad858a59a81b5)), closes [#31](https://github.com/nandenjin/tsukimi/issues/31)
+
+
+### Bug Fixes
+
+* Autoicon should works by typing `]` ([#35](https://github.com/nandenjin/tsukimi/issues/35)) ([857cc2c](https://github.com/nandenjin/tsukimi/commit/857cc2ce61454f618a971feeaae524b56789518f)), closes [#16](https://github.com/nandenjin/tsukimi/issues/16)
+
 ## [0.2.0](https://github.com/nandenjin/tsukimi/compare/v0.1.1...v0.2.0) (2023-09-13)
 
 
