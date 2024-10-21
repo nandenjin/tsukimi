@@ -91,6 +91,14 @@ window.addEventListener('keyup', (e) => {
         break
       }
 
+      // If a link composed by `]`, try to convert it
+      case ']': {
+        if (!isLinkJustComposed) break
+        convert()
+
+        break
+      }
+
       case 'ArrowRight': {
         if (!isLinkJustComposed) break
 
