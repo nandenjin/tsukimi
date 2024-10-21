@@ -10,8 +10,10 @@ const manifest = defineManifest({
   description: 'Useful toolkit for scrapbox.io as browser extension',
   homepage_url: 'https://github.com/nandenjin/tsukimi',
   minimum_chrome_version: '89',
+  permissions: ['contextMenus', 'activeTab', 'scripting'],
   icons: {
-    128: 'src/assets/icons/icon_128.png',
+    '16': 'src/assets/icons/icon_16.png',
+    '128': 'src/assets/icons/icon_128.png',
   },
   content_scripts: [
     {
@@ -19,6 +21,9 @@ const manifest = defineManifest({
       js: ['src/content_script/main.ts'],
     },
   ],
+  background: {
+    service_worker: 'src/background/tsukimi-background.ts',
+  },
 })
 
 // https://vitejs.dev/config/
