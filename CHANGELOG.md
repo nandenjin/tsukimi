@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/nandenjin/tsukimi/compare/v0.3.0...v0.3.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mermaid to v10.9.3 [security] ([52a5370](https://github.com/nandenjin/tsukimi/commit/52a5370ed87d11726c9e06347a73367b7ba52a31))
+
 ## [0.3.0](https://github.com/nandenjin/tsukimi/compare/v0.2.0...v0.3.0) (2024-10-21)
 
 
