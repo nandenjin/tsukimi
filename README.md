@@ -9,3 +9,4 @@ Utility as browser extension for scrapbox.io users
 ## Features
 
 - Autocomplete `.icon` while typing links
+- Copy URL and title in Cosense link syntax at any web pages
