@@ -77,6 +77,13 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
       const url = getPageURL()
       const title = getPageTitle()
 
+      // Check if the document has focus
+      if (!document.hasFocus()) {
+        // Attempt to focus the document
+        window.focus()
+        document.body.focus()
+      }
+
       // Copy URL and Title
       navigator.clipboard.writeText(`[${title} ${url}]`)
       console.log('Copied URL and Title')
