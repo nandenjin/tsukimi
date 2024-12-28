@@ -5,17 +5,6 @@
   "schedule": ["* * 26 * *"],
   "rangeStrategy": "pin",
   "lockFileMaintenance": { "enabled": true },
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest",
-        "lockFileMaintenance"
-      ],
-      "automerge": true,
-      "automergeType": "branch"
-    }
-  ]
+  "automerge": true,
+  "automergeType": "branch"
 }
