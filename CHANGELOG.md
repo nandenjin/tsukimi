@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/nandenjin/tsukimi/compare/v0.3.1...v0.3.2) (2025-01-13)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v19 ([#63](https://github.com/nandenjin/tsukimi/issues/63)) ([06016f4](https://github.com/nandenjin/tsukimi/commit/06016f49dc991974d423dd736cfa5445449f44f3))
+
 ## [0.3.1](https://github.com/nandenjin/tsukimi/compare/v0.3.0...v0.3.1) (2024-10-26)
 
 
