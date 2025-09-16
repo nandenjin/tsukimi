@@ -3,6 +3,13 @@ import react from '@vitejs/plugin-react-swc'
 import { crx, defineManifest } from '@crxjs/vite-plugin'
 import tsConfigPaths from 'vite-tsconfig-paths'
 
+const browser =
+  (process.env.TSUKIMI_BROWSER?.toLowerCase() as 'chrome' | 'firefox') ||
+  'chrome'
+if (!['chrome', 'firefox'].includes(browser)) {
+  throw new Error(`Unsupported browser: ${browser}`)
+}
+
 const manifest = defineManifest({
   manifest_version: 3,
   name: 'Tsukimi',
@@ -22,7 +29,10 @@ const manifest = defineManifest({
     },
   ],
   background: {
+    // For Chrome
     service_worker: 'src/background/tsukimi-background.ts',
+    // For Firefox
+    scripts: ['src/background/tsukimi-background.ts'],
   },
 })
 
@@ -31,5 +41,5 @@ export default defineConfig({
   build: {
     target: ['chrome89', 'edge89', 'firefox89'],
   },
-  plugins: [tsConfigPaths(), react(), crx({ manifest })],
+  plugins: [tsConfigPaths(), react(), crx({ manifest, browser })],
 })
