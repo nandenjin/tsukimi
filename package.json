@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "2.2.1",
-    "@eslint/js": "9.39.1",
+    "@eslint/js": "9.39.2",
     "@types/chrome": "0.1.32",
     "@types/jquery": "3.5.33",
     "@types/node": "24.10.1",
@@ -27,7 +27,7 @@
     "@types/react-dom": "19.2.3",
     "@typescript-eslint/parser": "8.48.0",
     "@vitejs/plugin-react-swc": "4.2.2",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-plugin-react-hooks": "7.0.1",
     "eslint-plugin-react-refresh": "0.4.26",
     "husky": "9.1.7",
