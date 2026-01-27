@@ -41,12 +41,16 @@ export default defineConfig((ctx) => {
         js: ['src/content_script/main.ts'],
       },
     ],
-    background: {
-      // For Chrome
-      service_worker: 'src/background/tsukimi-background.ts',
-      // For Firefox
-      scripts: ['src/background/tsukimi-background.ts'],
-    },
+    background:
+      browser === 'chrome'
+        ? // For Chrome
+          {
+            service_worker: 'src/background/tsukimi-background.ts',
+          }
+        : // For Firefox
+          {
+            scripts: ['src/background/tsukimi-background.ts'],
+          },
   })
 
   return {
