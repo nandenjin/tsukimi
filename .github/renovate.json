@@ -1,10 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "labels": ["dependencies"],
   "schedule": ["* * 26 * *"],
   "rangeStrategy": "pin",
-  "lockFileMaintenance": { "enabled": true },
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "automerge": true,
   "automergeType": "branch"
 }
