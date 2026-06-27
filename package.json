@@ -1,7 +1,7 @@
 {
   "name": "tsukimi",
   "private": true,
-  "version": "0.3.3",
+  "version": "0.3.4",
   "type": "module",
   "description": "Useful toolkit for scrapbox.io as browser extension",
   "scripts": {
@@ -14,30 +14,30 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "2.3.0",
-    "@eslint/js": "9.39.2",
-    "@types/chrome": "0.1.36",
-    "@types/jquery": "3.5.33",
-    "@types/node": "24.10.9",
-    "@types/react": "19.2.9",
+    "@crxjs/vite-plugin": "2.7.0",
+    "@eslint/js": "10.0.1",
+    "@types/chrome": "0.2.0",
+    "@types/jquery": "4.0.1",
+    "@types/node": "24.12.4",
+    "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
-    "@typescript-eslint/parser": "8.54.0",
-    "@vitejs/plugin-react-swc": "4.2.2",
+    "@typescript-eslint/parser": "8.60.0",
+    "@vitejs/plugin-react-swc": "4.3.1",
     "consola": "3.4.2",
-    "eslint": "9.39.2",
-    "eslint-plugin-react-hooks": "7.0.1",
-    "eslint-plugin-react-refresh": "0.4.26",
+    "eslint": "10.6.0",
+    "eslint-plugin-react-refresh": "0.5.3",
+    "eslint-plugin-react-hooks": "7.1.1",
     "husky": "9.1.7",
-    "lint-staged": "16.2.7",
-    "prettier": "3.8.1",
+    "lint-staged": "17.0.8",
+    "prettier": "3.8.5",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.54.0",
-    "vite": "7.3.1",
-    "vite-tsconfig-paths": "6.0.5"
+    "typescript-eslint": "8.60.0",
+    "vite": "7.3.6",
+    "vite-tsconfig-paths": "6.1.1"
   },
   "lint-staged": {
     "*.{ts,tsx,ts}": "eslint --cache --fix",
