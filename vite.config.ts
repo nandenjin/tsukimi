@@ -23,10 +23,15 @@ export default defineConfig((ctx) => {
     )
   }
 
+  const version = process.env.npm_package_version
+  if (!version) {
+    throw new Error('npm_package_version is not defined')
+  }
+
   const manifest = defineManifest({
     manifest_version: 3,
     name: 'Tsukimi',
-    version: process.env.npm_package_version,
+    version,
     description: 'Useful toolkit for scrapbox.io as browser extension',
     homepage_url: 'https://github.com/nandenjin/tsukimi',
     minimum_chrome_version: '89',
@@ -41,6 +46,9 @@ export default defineConfig((ctx) => {
         js: ['src/content_script/main.ts'],
       },
     ],
+    browser_specific_settings: {
+      gecko: { id: 'com.nandenjin.tsukimi' },
+    },
     background:
       browser === 'chrome'
         ? // For Chrome
