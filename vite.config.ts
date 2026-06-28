@@ -47,7 +47,12 @@ export default defineConfig((ctx) => {
       },
     ],
     browser_specific_settings: {
-      gecko: { id: 'com.nandenjin.tsukimi' },
+      gecko: {
+        id: 'tsukimi@nandenjin.com',
+        data_collection_permissions: {
+          required: ['browsingActivity', 'websiteContent'],
+        },
+      },
     },
     background:
       browser === 'chrome'
