@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.5](https://github.com/nandenjin/tsukimi/compare/v0.3.4...v0.3.5) (2026-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo ([4c7d5d0](https://github.com/nandenjin/tsukimi/commit/4c7d5d083a723178e4e5909481e18e3ddf780cf1))
+* **deps:** update react monorepo ([8d68628](https://github.com/nandenjin/tsukimi/commit/8d68628835e2a58fb2d75cf42a288da18532fe0b))
+* **deps:** update react monorepo ([4b65320](https://github.com/nandenjin/tsukimi/commit/4b653207af661fe714adceff5ce693980caaa2f7))
+* **deps:** update react monorepo to v19.2.8 ([42ba12c](https://github.com/nandenjin/tsukimi/commit/42ba12c60d96fd08ded5bb4dcb5ecc1eaa209584))
+
 ## [0.3.4](https://github.com/nandenjin/tsukimi/compare/v0.3.3...v0.3.4) (2026-01-27)
 
 
